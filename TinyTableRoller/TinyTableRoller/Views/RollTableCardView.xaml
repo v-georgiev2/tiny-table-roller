@@ -6,8 +6,8 @@
            BackgroundColor="{StaticResource Gray400}"
            BorderColor="{StaticResource Gray900}">
         <Grid>
-            <Label x:Name="nameLabel" />
-            <Label x:Name="descriptionLabel" />
+            <Label />
+            <Label />
         </Grid>
     </Frame>
 </ContentView>
