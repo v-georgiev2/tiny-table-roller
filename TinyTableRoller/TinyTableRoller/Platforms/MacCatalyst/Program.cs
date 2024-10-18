@@ -1,7 +1,7 @@
 ﻿using ObjCRuntime;
 using UIKit;
 
-namespace TinyTableRoller
+namespace TinyTableRoller.Platforms.MacCatalyst
 {
     public class Program
     {

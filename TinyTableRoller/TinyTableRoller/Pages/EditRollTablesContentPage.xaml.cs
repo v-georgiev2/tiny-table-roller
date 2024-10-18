@@ -1,4 +1,4 @@
-namespace TinyTableRoller.Views;
+namespace TinyTableRoller.Pages;
 
 public partial class EditRollTablesContentPage : ContentPage
 {

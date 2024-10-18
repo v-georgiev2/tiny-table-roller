@@ -1,7 +1,7 @@
 using System.Text.Json;
 using TinyTableRoller.Data;
 
-namespace TinyTableRoller.Views;
+namespace TinyTableRoller.Pages;
 
 public partial class RollTableListContentPage : ContentPage
 {

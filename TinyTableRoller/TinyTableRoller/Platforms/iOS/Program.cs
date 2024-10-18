@@ -1,7 +1,7 @@
 ﻿using ObjCRuntime;
 using UIKit;
 
-namespace TinyTableRoller
+namespace TinyTableRoller.Platforms.iOS
 {
     public class Program
     {

@@ -1,6 +1,6 @@
 ﻿using Foundation;
 
-namespace TinyTableRoller
+namespace TinyTableRoller.Platforms.iOS
 {
     [Register("AppDelegate")]
     public class AppDelegate : MauiUIApplicationDelegate
