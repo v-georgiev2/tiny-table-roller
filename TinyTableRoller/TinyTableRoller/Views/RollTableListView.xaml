@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TinyTableRoller.Views.RollTableListView"
+             xmlns:views="clr-namespace:TinyTableRoller.Views">
+    <VerticalStackLayout>
+        <ScrollView Orientation="Vertical">
+            <VerticalStackLayout Spacing="12"
+                                 BindableLayout.ItemsSource="{Binding RollTables}">
+                <BindableLayout.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout>
+                            <Frame BackgroundColor="{StaticResource Gray400}"
+                                   BorderColor="{StaticResource Gray900}">
+                                <Grid>
+                                    <Label Text="{Binding Name}"/>
+                                    <Label Text="{Binding Description}"/>
+                                </Grid>
+                            </Frame>
+                        </StackLayout>
+                    </DataTemplate>
+                </BindableLayout.ItemTemplate>
+            </VerticalStackLayout>
+        </ScrollView>
+    </VerticalStackLayout>
+</ContentView>

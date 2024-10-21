@@ -11,10 +11,7 @@
 
     <TabBar>
         <Tab Title="123">
-            <ShellContent ContentTemplate="{DataTemplate views:EditRollTablesContentPage}" />
-        </Tab>
-        <Tab Title="test">
-            <ShellContent ContentTemplate="{DataTemplate views:CreateUpdateRollTableContentPage}" />
+            <ShellContent ContentTemplate="{DataTemplate pages:RollTableListPage}" />
         </Tab>
     </TabBar>
 </Shell>

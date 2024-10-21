@@ -1,4 +1,7 @@
 ﻿using Microsoft.Extensions.Logging;
+using TinyTableRoller.Helpers;
+using TinyTableRoller.Service;
+using TinyTableRoller.ViewModels;
 
 namespace TinyTableRoller
 {
@@ -18,6 +21,12 @@ namespace TinyTableRoller
 #if DEBUG
     		builder.Logging.AddDebug();
 #endif
+
+            builder.Services.AddTransient<IFileStorageService, FileStorageService>();
+
+            builder.Services.AddTransient<RollTableListViewModel>();
+
+            ServiceHelper.Initialize(builder.Services.BuildServiceProvider());
 
             return builder.Build();
         }
